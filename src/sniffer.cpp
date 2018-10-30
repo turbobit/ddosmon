@@ -25,7 +25,10 @@ void Sniffer::init()
 
 void Sniffer::setIface(const char *iface)
 {
-    static char ifaces[24][6] =
+	strcpy(m_iface, iface);
+	return;
+	if(false){
+	static char ifaces[24][6] =
         { "lo", "eth", "sl", "ppp", "ippp", "plip", "fddi", "dvb",
         "pvc", "hdlc", "ipsec", "sbni", "wvlan", "wlan", "sm2", "sm3",
         "pent", "lec", "brg", "tun", "tap", "cipcb", "tunl", "vlan"};
@@ -36,8 +39,9 @@ void Sniffer::setIface(const char *iface)
             return;
         }
     }
-
+	
     LOG_FATAL("Iface " << iface << " not supported");
+	}
 }
 
 bool Sniffer::getNextPacket(Packet *packet)
