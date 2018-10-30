@@ -1,10 +1,10 @@
 interface = "eth0"
 global_traffic_threshold = 900000
-global_packets_threshold = 30
+global_packets_threshold = 225000
 ip_traffic_threshold = 500000
 ip_packets_threshold = 125000
 notification_traffic_threshold = 20000
-notification_packets_threshold = 30
+notification_packets_threshold = 20000
 ipblock_retry_ticks = 5*3600*1000
 notification_command = "./scripts/notificate \"%1%\" \"%2%\" &"
 onblockip_command = "./scripts/ipblock block %1% &"
