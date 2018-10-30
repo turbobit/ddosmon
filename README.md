@@ -17,8 +17,8 @@ It can classify following attacks:
 
 Any other attack with massive amount of traffic or packet would still be detected.
 
-### dep
-sudo apt-get install -y libncurses5-dev build-essential python-dev gcc g++ git cmake librocksdb-dev libboost-all-dev liblua5.1-0-dev  libxml2-dev  libxml2 libxslt-dev libncurses5-dev
+### dependency
+```sudo apt-get install -y libncurses5-dev build-essential python-dev gcc g++ git cmake librocksdb-dev libboost-all-dev liblua5.1-0-dev  libxml2-dev  libxml2 libxslt-dev libncurses5-dev```
 
 
 ### Building
