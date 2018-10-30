@@ -17,10 +17,14 @@ It can classify following attacks:
 
 Any other attack with massive amount of traffic or packet would still be detected.
 
+### dep
+sudo apt-get install -y libncurses5-dev build-essential python-dev gcc g++ git cmake librocksdb-dev libboost-all-dev liblua5.1-0-dev  libxml2-dev  libxml2 libxslt-dev libncurses5-dev
+
+
 ### Building
 
 ```
-git clone git@github.com:edubart/ddosmon ddosmon
+git clone https://github.com/turbobit/ddosmon ddosmon
 cd ddosmon
 mkdir build && cd build
 cmake ..
