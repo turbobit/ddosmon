@@ -34,6 +34,9 @@ make
 ### Running
 
 ```
+# optional, First run make log directory
+mkdir logs
+
 # optional, I usually run this inside a screen session
 screen 
 
